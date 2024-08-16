@@ -147,7 +147,7 @@ public class Main {
         System.out.println("Visitante eliminado con éxito.");
 
         for (Visitante visitante : listaVisitantes) {
-            if (nombre != visitante.getNombre() && apellido != visitante.getApellido()) {
+            if ( !visitante.getNombre().equals(nombre) && !visitante.getApellido().equals(apellido)) {
                 System.out.println("Visitante no encontrado.");
             }
         }
